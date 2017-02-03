@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/gradient_cal"
+tools:context="com.example.priyanka.calculator1.MainActivity">
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="enter first number"
+    android:id="@+id/first"
+    android:inputType="number"
+    android:layout_marginTop="5dp"
+    android:textColor="#000"
+    android:layout_marginLeft="10dp"
+/>
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="enter second number"
+    android:inputType="number"
+    android:layout_below="@+id/first"
+    android:textColor="#000"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:id="@+id/second"
+/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0"
+    android:textSize="20dp"
+    android:id="@+id/result"
+    android:layout_centerInParent="true"
+
+/>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ADD"
+    android:layout_below="@+id/second"
+    android:textColor="#000"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="5dp"
+    android:id="@+id/button1"
+/>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="SUB"
+    android:layout_below="@+id/button1"
+    android:textColor="#000"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="30dp"
+    android:id="@+id/button2"
+/>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="MUL"
+    android:layout_below="@+id/second"
+    android:textColor="#000"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="5dp"
+    android:layout_toRightOf="@+id/button1"
+    android:id="@+id/button3"
+/>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="DIV"
+    android:layout_below="@+id/button3"
+    android:textColor="#000"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="5dp"
+    android:layout_toRightOf="@+id/button2"
+    android:id="@+id/button4"/>
+
+
+</RelativeLayout>
